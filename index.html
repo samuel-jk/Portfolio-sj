@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Jacinth - AI & ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="noise-overlay"></div>
+    
+    <div class="terminal-intro">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn red"></span>
+                    <span class="terminal-btn yellow"></span>
+                    <span class="terminal-btn green"></span>
+                </div>
+                <div class="terminal-title">samuel_jacinth.sh</div>
+            </div>
+            <div class="terminal-body">
+                <div class="line">$ <span class="command">init</span></div>
+                <div class="line">Initializing AI profile...</div>
+                <div class="line">Loading neural networks... <span class="success">OK</span></div>
+                <div class="line">Loading ML experience... <span class="success">OK</span></div>
+                <div class="line">Running intelligence.exe... <span class="success">OK</span></div>
+                <div class="line">$ <span class="command">launch --portfolio</span></div>
+                <div class="line"><span class="success">Hello, World! Ready to explore my AI Journey?</span></div>
+                <div class="line cursor-line">$ <span class="cursor-blink">_</span></div>
+            </div>
+        </div>
+        <div class="skip-intro">
+            <button class="skip-btn">SKIP INTRO →</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="code-bracket">{</span> Samuel<span class="highlight"> Jacinth</span> <span class="code-bracket">}</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-text="Home">Home</a></li>
+                    <li><a href="#about" data-text="About">About</a></li>
+                    <li><a href="#skills" data-text="Skills">Skills</a></li>
+                    <li><a href="#projects" data-text="Projects">Projects</a></li>
+                    <li><a href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="neural-bg">
+                <canvas id="neural-network"></canvas>
+            </div>
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h1 class="typing-text">Hello, I'm <span class="highlight">Samuel Jacinth</span></h1>
+                </div>
+                <h2 class="glitch" data-text="AI & ML Engineer">AI & ML Engineer</h2>
+                <p>Crafting intelligent systems that learn, adapt, and evolve. <span class="code-comment">// Human-like intelligence, machine-driven precision</span></p>
+                
+                <div class="ai-stats">
+                    <div class="stat">
+                        <div class="stat-label">Neural Networks</div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 92%"></div></div>
+                        <div class="stat-value">92%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">NLP Systems</div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+                        <div class="stat-value">95%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">ML Engineering</div>
+                        <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+                        <div class="stat-value">90%</div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-robot"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me <i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="code-comment">// who_am_i.py</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a <span class="highlight">Machine Learning Engineer</span> with 2 years of experience creating AI-powered solutions that transform data into actionable intelligence. My expertise lies at the intersection of <span class="mono">neural networks</span>, <span class="mono">natural language processing</span>, and <span class="mono">recommendation systems</span>.</p>
+                    
+                    <p>Working with AI is more than a career for me—it's a passion to create systems that can understand, learn, and evolve in ways that seemed like science fiction just a decade ago. I'm particularly fascinated by how machine learning can enhance human capabilities rather than replace them.</p>
+                    
+                    <p>When I'm not training models or optimizing algorithms, you might find me exploring the latest research papers, contributing to open-source AI projects, or contemplating the ethical implications of artificial intelligence.</p>
+                    
+                    <div class="code-block">
+                        <pre><code>
+def samuel_jacinth():
+    skills = ["Machine Learning", "NLP", "Recommendation Systems", "Python"]
+    experience = 2  # years
+    passion = float('inf')
+    
+    while True:
+        learn_new_technologies()
+        build_amazing_ai_solutions()
+        share_knowledge()
+        
+        if coffee_empty():
+            refill_coffee()
+
+# Currently running...
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-card slide-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3>ML Engineering</h3>
+                            <p>Building and deploying machine learning models at scale with robust MLOps practices.</p>
+                            <div class="tech-tags">
+                                <span>TensorFlow</span>
+                                <span>PyTorch</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card slide-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3>NLP & Chatbots</h3>
+                            <p>Developing intelligent conversational AI systems with advanced language understanding.</p>
+                            <div class="tech-tags">
+                                <span>BERT</span>
+                                <span>LangChain</span>
+                                <span>RAG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card slide-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Recommendation Systems</h3>
+                            <p>Creating personalized recommendation algorithms that drive user engagement.</p>
+                            <div class="tech-tags">
+                                <span>Collaborative Filtering</span>
+                                <span>Content-Based</span>
+                                <span>Hybrid Models</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills <span class="code-comment">// capabilities.json</span></h2>
+            <div class="matrix-bg">
+                <div class="matrix-column" id="matrix1"></div>
+                <div class="matrix-column" id="matrix2"></div>
+                <div class="matrix-column" id="matrix3"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li data-value="95">
+                            <span>Natural Language Processing</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            <span class="progress-value">95%</span>
+                        </li>
+                        <li data-value="90">
+                            <span>Deep Learning</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            <span class="progress-value">90%</span>
+                        </li>
+                        <li data-value="92">
+                            <span>Recommendation Systems</span>
+                            <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+                            <span class="progress-value">92%</span>
+                        </li>
+                        <li data-value="85">
+                            <span>Computer Vision</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            <span class="progress-value">85%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li data-value="88">
+                            <span>PyTorch/TensorFlow</span>
+                            <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                            <span class="progress-value">88%</span>
+                        </li>
+                        <li data-value="95">
+                            <span>Python</span>
+                            <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            <span class="progress-value">95%</span>
+                        </li>
+                        <li data-value="92">
+                            <span>Hugging Face</span>
+                            <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+                            <span class="progress-value">92%</span>
+                        </li>
+                        <li data-value="80">
+                            <span>Docker/Kubernetes</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            <span class="progress-value">80%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>MLOps</h3>
+                    <ul>
+                        <li data-value="90">
+                            <span>Model Deployment</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            <span class="progress-value">90%</span>
+                        </li>
+                        <li data-value="85">
+                            <span>CI/CD for ML</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            <span class="progress-value">85%</span>
+                        </li>
+                        <li data-value="82">
+                            <span>Model Monitoring</span>
+                            <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+                            <span class="progress-value">82%</span>
+                        </li>
+                        <li data-value="87">
+                            <span>Cloud Platforms (AWS, GCP)</span>
+                            <div class="progress-bar"><div class="progress" style="width: 87%"></div></div>
+                            <span class="progress-value">87%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects <span class="code-comment">// showcase.ai</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(to right, #3b82f6, #a855f7)">
+                        <div class="project-hover">
+                            <div class="project-tags-floating">
+                                <span>LLMs</span>
+                                <span>Vector DB</span>
+                                <span>PyTorch</span>
+                            </div>
+                        </div>
+                        <h3>RAG Chatbot System</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a Retrieval-Augmented Generation (RAG) based chatbot system that provides accurate, context-aware responses by dynamically retrieving relevant information from large document repositories.</p>
+                        <div class="project-tags">
+                            <span>LLMs</span>
+                            <span>Vector Databases</span>
+                            <span>PyTorch</span>
+                            <span>Langchain</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(to right, #10b981, #14b8a6)">
+                        <div class="project-hover">
+                            <div class="project-tags-floating">
+                                <span>Speech</span>
+                                <span>Transformers</span>
+                                <span>TensorFlow</span>
+                            </div>
+                        </div>
+                        <h3>Spoken Language Identifier</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Built a robust system that can identify different spoken languages from audio samples with high accuracy, supporting multiple language families and dialects with minimal latency.</p>
+                        <div class="project-tags">
+                            <span>Speech Processing</span>
+                            <span>Transformer Models</span>
+                            <span>TensorFlow</span>
+                            <span>MFCC Features</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(to right, #f97316, #ef4444)">
+                        <div class="project-hover">
+                            <div class="project-tags-floating">
+                                <span>Recommendations</span>
+                                <span>Filtering</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <h3>Coupon Recommendation Engine</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a personalized coupon recommendation system that analyzes user behavior, purchase history, and contextual information to deliver targeted promotions that maximize conversion rates.</p>
+                        <div class="project-tags">
+                            <span>Recommendation Algorithms</span>
+                            <span>Collaborative Filtering</span>
+                            <span>Scikit-Learn</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch <span class="code-comment">// connect.ai</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="binary-decoration">01100011 01101111 01101110 01110100 01100001 01100011 01110100</div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:samuel.jacinth@example.com">samuel.kapudasi@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-tooltip="Medium"><i class="fab fa-medium"></i></a>
+                    </div>
+                    
+                    <div class="ai-chat-preview">
+                        <div class="chat-header">
+                            <div class="chat-title"><i class="fas fa-robot"></i> AI Assistant</div>
+                        </div>
+                        <div class="chat-body">
+                            <div class="chat-message ai">
+                                Hello! I'm Samuel's AI assistant. He's currently training models, but I can help you get in touch with him.
+                            </div>
+                            <div class="chat-message user">
+                                I'd like to discuss a project opportunity!
+                            </div>
+                            <div class="chat-message ai">
+                                Great! Please fill out the form to get started. I'll make sure Samuel sees your message right away.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required class="interactive-input">
+                            <div class="input-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required class="interactive-input">
+                            <div class="input-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required class="interactive-input">
+                            <div class="input-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required class="interactive-input"></textarea>
+                            <div class="input-status">
+                                <span class="status-indicator"></span>
+                                <span class="status-text"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Processing...</span>
+                            <span class="btn-done"><i class="fas fa-check"></i> Sent!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="code-bracket">{</span> Samuel<span class="highlight">Jacinth</span> <span class="code-bracket">}</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Samuel Jacinth. All Rights Reserved. <span class="code-comment">// Built with AI-powered creativity</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Wait for DOM to load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Terminal intro effect
+            const terminal = document.querySelector('.terminal-intro');
+            const skipButton = document.querySelector('.skip-btn');
+            
+            setTimeout(() => {
+                terminal.classList.add('visible');
+            }, 500);
+            
+            skipButton.addEventListener('click', () => {
+                terminal.classList.add('fade-out');
+                setTimeout(() => {
+                    terminal.style.display = 'none';
+                }, 1000);
+            });
+            
+            setTimeout(() => {
+                terminal.classList.add('fade-out');
+                setTimeout(() => {
+                    terminal.style.display = 'none';
+                }, 1000);
+            }, 5000);
+            
+            // Mobile navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+            
+            // Custom cursor
+            const cursor = document.querySelector('.cursor');
+            
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+            
+            document.addEventListener('mousedown', () => {
+                cursor.classList.add('cursor-click');
+                setTimeout(() => {
+                    cursor.classList.remove('cursor-click');
+                }, 500);
+            });
+            
+            // Interactive form effects
+            const inputs = document.querySelectorAll('.interactive-input');
+            
+            inputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.parentElement.classList.add('focus');
+                });
+                
+                input.addEventListener('blur', () => {
+                    input.parentElement.classList.remove('focus');
+                    
+                    // Simple validation
+                    if (input.value.trim() !== '') {
+                        input.classList.add('valid');
+                        input.parentElement.querySelector('.status-indicator').classList.add('valid');
+                        input.parentElement.querySelector('.status-text').textContent = 'Looks good!';
+                    } else if (input.required) {
+                        input.classList.add('invalid');
+                        input.parentElement.querySelector('.status-indicator').classList.add('invalid');
+                        input.parentElement.querySelector('.status-text').textContent = 'This field is required';
+                    }
+                });
+                
+                input.addEventListener('input', () => {
+                    input.classList.remove('valid', 'invalid');
+                    const statusIndicator = input.parentElement.querySelector('.status-indicator');
+                    statusIndicator.classList.remove('valid', 'invalid');
+                    input.parentElement.querySelector('.status-text').textContent = '';
+                });
+            });
+            
+            // Form submission effect
+            const contactForm = document.getElementById('contact-form');
+            const submitBtn = document.querySelector('.submit-btn');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                submitBtn.classList.add('loading');
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.classList.add('done');
+                    
+                    setTimeout(() => {
+                        submitBtn.classList.remove('done');
+                        contactForm.reset();
+                        inputs.forEach(input => {
+                            input.classList.remove('valid', 'invalid');
+                            const statusIndicator = input.parentElement.querySelector('.status-indicator');
+                            statusIndicator.classList.remove('valid', 'invalid');
+                            input.parentElement.querySelector('.status-text').textContent = '';
+                        });
+                    }, 2000);
+                },
+                1500);
+            });
+            
+            // Theme switcher
+            const themeToggle = document.getElementById('theme-toggle');
+            
+            themeToggle.addEventListener('change', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+            
+            // Check for saved theme preference
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                themeToggle.checked = true;
+            }
+            
+            // Neural network background for hero section
+            const canvas = document.getElementById('neural-network');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                const width = canvas.width = window.innerWidth;
+                const height = canvas.height = 500;
+                
+                // Particles for neural network nodes
+                let particles = [];
+                const maxParticles = 70;
+                
+                // Initialize particles
+                for (let i = 0; i < maxParticles; i++) {
+                    particles.push({
+                        x: Math.random() * width,
+                        y: Math.random() * height,
+                        size: Math.random() * 3 + 1,
+                        speedX: (Math.random() - 0.5) * 0.5,
+                        speedY: (Math.random() - 0.5) * 0.5
+                    });
+                }
+                
+                // Draw neural network
+                function drawNeuralNetwork() {
+                    ctx.clearRect(0, 0, width, height);
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                    ctx.fillRect(0, 0, width, height);
+                    
+                    // Update and draw particles
+                    for (let i = 0; i < particles.length; i++) {
+                        let p = particles[i];
+                        
+                        // Move particles
+                        p.x += p.speedX;
+                        p.y += p.speedY;
+                        
+                        // Bounce off edges
+                        if (p.x < 0 || p.x > width) p.speedX *= -1;
+                        if (p.y < 0 || p.y > height) p.speedY *= -1;
+                        
+                        // Draw particle
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fillStyle = 'rgba(107, 99, 255, 0.7)';
+                        ctx.fill();
+                        
+                        // Connect particles within a certain distance
+                        for (let j = i + 1; j < particles.length; j++) {
+                            let p2 = particles[j];
+                            let dx = p.x - p2.x;
+                            let dy = p.y - p2.y;
+                            let distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < 100) {
+                                ctx.beginPath();
+                                ctx.moveTo(p.x, p.y);
+                                ctx.lineTo(p2.x, p2.y);
+                                ctx.strokeStyle = `rgba(107, 99, 255, ${0.8 - distance/100})`;
+                                ctx.lineWidth = 0.5;
+                                ctx.stroke();
+                            }
+                        }
+                    }
+                    
+                    requestAnimationFrame(drawNeuralNetwork);
+                }
+                
+                // Start animation
+                drawNeuralNetwork();
+            }
+            
+            // Matrix effect (simplified)
+            function createMatrixEffect(elementId) {
+                const matrix = document.getElementById(elementId);
+                if (!matrix) return;
+                
+                const characters = '01';
+                const fontSize = 10;
+                const drops = [];
+                const columnCount = matrix.offsetWidth / fontSize;
+                
+                // Initialize columns
+                for (let i = 0; i < columnCount; i++) {
+                    drops[i] = Math.floor(Math.random() * matrix.offsetHeight / fontSize);
+                }
+                
+                function drawMatrix() {
+                    let text = '';
+                    
+                    for (let i = 0; i < drops.length; i++) {
+                        const char = characters.charAt(Math.floor(Math.random() * characters.length));
+                        const x = i * fontSize;
+                        const y = drops[i] * fontSize;
+                        
+                        text += `<span class="matrix-char" style="left:${x}px; top:${y}px;">${char}</span>`;
+                        
+                        if (y > matrix.offsetHeight && Math.random() > 0.97) {
+                            drops[i] = 0;
+                        }
+                        
+                        drops[i]++;
+                    }
+                    
+                    matrix.innerHTML = text;
+                    setTimeout(drawMatrix, 100);
+                }
+                
+                drawMatrix();
+            }
+            
+            createMatrixEffect('matrix1');
+            createMatrixEffect('matrix2');
+            createMatrixEffect('matrix3');
+            
+            // Typing animation
+            function typeText() {
+                const typingText = document.querySelector('.typing-text');
+                const text = typingText.textContent;
+                typingText.textContent = '';
+                
+                let i = 0;
+                function typeChar() {
+                    if (i < text.length) {
+                        typingText.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeChar, Math.random() * 50 + 50);
+                    }
+                }
+                
+                typeChar();
+            }
+            
+            // Start typing animation after intro
+            setTimeout(typeText, 5500);
+        });
+    </script>
+</body>
+</html> 
