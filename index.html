@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#6c63ff">
+    <meta name="theme-color" content="#6366f1">
     <title>Samuel Jacinth - AI & ML Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -542,6 +542,31 @@ def samuel_jacinth():
                 // Hide cursor on touch devices
                 cursor.style.display = 'none';
             }
+            
+            // Scroll reveal animation
+            const revealElements = document.querySelectorAll('.skill-card, .project-card, .section-title, .about-text p, .skills-grid, .code-block');
+            
+            const revealOnScroll = function() {
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('reveal-visible');
+                    }
+                });
+            };
+            
+            // Add reveal class to all elements
+            revealElements.forEach(element => {
+                element.classList.add('reveal');
+            });
+            
+            // Call once on load
+            revealOnScroll();
+            
+            // Add event listener
+            window.addEventListener('scroll', revealOnScroll);
             
             // Interactive form effects
             const inputs = document.querySelectorAll('.interactive-input');
