@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6c63ff">
     <title>Samuel Jacinth - AI & ML Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -503,26 +504,44 @@ def samuel_jacinth():
             
             // Close mobile menu when a link is clicked
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (e) => {
                     navLinks.classList.remove('active');
                     hamburger.classList.remove('active');
+                    
+                    // Smooth scroll for navigation links
+                    if (link.hash) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(link.hash);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
                 });
             });
             
             // Custom cursor
             const cursor = document.querySelector('.cursor');
             
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.left = e.clientX + 'px';
-                cursor.style.top = e.clientY + 'px';
-            });
-            
-            document.addEventListener('mousedown', () => {
-                cursor.classList.add('cursor-click');
-                setTimeout(() => {
-                    cursor.classList.remove('cursor-click');
-                }, 500);
-            });
+            // Only enable custom cursor on non-touch devices
+            if (window.matchMedia("(pointer: fine)").matches) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                
+                document.addEventListener('mousedown', () => {
+                    cursor.classList.add('cursor-click');
+                    setTimeout(() => {
+                        cursor.classList.remove('cursor-click');
+                    }, 500);
+                });
+            } else {
+                // Hide cursor on touch devices
+                cursor.style.display = 'none';
+            }
             
             // Interactive form effects
             const inputs = document.querySelectorAll('.interactive-input');
